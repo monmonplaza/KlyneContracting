@@ -1,0 +1,27 @@
+.backtotop {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    opacity: 0;
+    transition: .2s ease;
+    a {
+    padding:.5rem 1rem;
+    border-radius: .5rem;
+    background-color: darken($primary, 20);
+    transition: .5s ease;
+    cursor: pointer;
+   
+    &:hover {
+        background-color: darken($primary, 30); 
+    }
+    }
+    
+    i {
+        line-height: 1;
+        color: $light;
+    }
+}
+
+.backtotop.show {
+    opacity: 1;
+}

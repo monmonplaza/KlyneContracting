@@ -1,0 +1,12 @@
+@import '01-variable';
+@import '02-reset';
+@import '03-mixins';
+@import '04-global';
+
+
+@import './components/header';
+@import './components/footer';
+@import './components/backtotop';
+@import './components/form';
+
+@import './pages/index';

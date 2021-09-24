@@ -1,0 +1,27 @@
+.form__group {
+    margin-bottom: 2rem;
+    label {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: .8rem .5rem;
+        border: 1px solid #ccc;
+        border-radius: .5rem;
+    }
+
+    textarea {
+        height:17rem;
+        overflow-y: auto;
+    }
+
+    button {
+        @include btn;
+        border: none;
+        padding: 1rem;
+        color: $light;
+    }
+}

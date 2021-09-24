@@ -1,0 +1,22 @@
+@mixin media-query($width) {
+    @media screen and (max-width:$width) {
+        @content
+    }
+}
+
+@mixin btn($color:$primary) {
+    min-width: 8rem;
+    text-align: center;
+    border-radius: .5rem;
+    transition: .5s ease;
+    padding: .6rem 1.6rem;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    background-color: $color;
+    font-size: 1.4rem;
+    &:hover {
+        background-color: darken($color,5);
+    }
+}
+
